@@ -4,16 +4,36 @@
 <head>
     <title></title>
     <style>
+        h1{
+            margin:0;
+            
+        }
         .card{
             margin top:20px;
             background:blue;
         width:400px;
         height:400px;
+            
         }
         .card:hover{
+            text-align:center;
+            line-height:200px;
             transform:rotateY(180deg);
            transition:all 0.6s ease; 
             transform-style:preserve=3d;
+            
+        }
+        .front,.back{
+            position:absolute;
+            width:400px;
+            height:400px;
+            top:0;
+            left:0;
+            backface-visibility:  hidden;
+        }
+        .back{
+            
+             transform:rotateY(180deg);
             
         }
     </style>
