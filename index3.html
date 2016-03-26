@@ -3,6 +3,7 @@
     
     <link href="style.css" rel="stylesheet" />
     
+<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/yahfie" type="text/css"/> 
 <style>
         h1{
             margin:0;
@@ -12,7 +13,7 @@
             margin :20px;
             background#BCDDE8;
         width:auto;
-        height:250px;
+        height:850px;
             text-align: center;
             transition:all 0.6s ease;
             transform-style: preserve-3d;
@@ -25,14 +26,14 @@
             text-align:center;
             line-height:200px;
             transform:rotateY(180deg);
-           transition:all 0.6s ease; 
+           transition:all 1.0s ease; 
             transform-style:preserve=3d;
             
         }
         .front,.back{
-            background:#BCDDE8;
+            background:white;
             position:absolute;
-            width:400px;
+            width:800px;
             height:800px;
             top:0;
             left:0;
@@ -52,13 +53,19 @@
     #left{
         height:1500px;
         width:1500px;
-        background-color: cornflowerblue;
+        background-color:white;
         float:left;
         margin:200px;
         margin-left: 5px;
         margin-top:155px;
         position: absolute;
-        background:url("chair.jpeg")
+    }
+    
+p {
+   font-family: 'YahfieHeavy';
+   font-weight: normal;
+   font-style: normal;
+} 
     </style>
     
     </head>
@@ -68,18 +75,18 @@
     <div id="container">
         
         <header>
-            <h1>Simple Design</h1>
+            <h1><p>Simple Design.....</p></h1>
            
          
         </header>
         
         <div id="banner">
         
-        <h2> this is the banner</h2>
+        
              <div class="card-container">
         <div class ="card">
-    <div class="front"></div><img src="design2.jpeg" width="auto" height="300px"/</div>
-        <div class="back"><img src="simple2.jpeg" width="auto" height="300px"></div>
+            <div class="front"><h1><p>Welcome.....</p></h1> </div>
+            <div class="back"><h1> <p>To Simple Design</p></h1></div>
         </div>
         </div>
             
@@ -89,10 +96,22 @@
         <div id="content">
         
    
-    <div id="left">left</div>
+    <div id="left">left
+ <div class="card-container">
+        <div class ="card">
+    <div class="front"> front</div>
+        <div class="back">test</div>
+        </div>
+        </div>
+            
+            
+            
+            
+            
+            </div>
         
           
-        <div id="footer"> this is the footer</div>
+        <div id="footer"> <font color="white">footer</font></div>
         </div>
         </div>
 
