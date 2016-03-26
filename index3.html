@@ -2,6 +2,65 @@
 <head>  <title>collapsing header effect  </title>   
     
     <link href="style.css" rel="stylesheet" />
+    
+<style>
+        h1{
+            margin:0;
+            
+        }
+        .card{
+            margin :20px;
+            background#BCDDE8;
+        width:auto;
+        height:250px;
+            text-align: center;
+            transition:all 0.6s ease;
+            transform-style: preserve-3d;
+            positon:relative;
+            line-height: 200px;
+            
+            
+        }
+        .card:hover{
+            text-align:center;
+            line-height:200px;
+            transform:rotateY(180deg);
+           transition:all 0.6s ease; 
+            transform-style:preserve=3d;
+            
+        }
+        .front,.back{
+            background:#BCDDE8;
+            position:absolute;
+            width:400px;
+            height:800px;
+            top:0;
+            left:0;
+            backface-visibility:  hidden;
+        }
+        .back{
+            
+             transform:rotateY(180deg);
+            
+        }
+    #footer{
+        height:100px;
+        width:1500px;
+        background-color: black;
+         margin-right: 0px;
+    }
+    #left{
+        height:1500px;
+        width:1500px;
+        background-color: cornflowerblue;
+        float:left;
+        margin:200px;
+        margin-left: 5px;
+        margin-top:155px;
+        position: absolute;
+        background:url("chair.jpeg")
+    </style>
+    
     </head>
 
     
@@ -9,35 +68,34 @@
     <div id="container">
         
         <header>
-        <h1>Simple Designs</h1>
-            <i class="fa fa-bars nav togglle"</l1>
-            <nav class ="main navigation" >
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About US</a></li>
-                 <li><a href="#">Services Offered</a></li>
-                
-                </ul>
-            </nav>
+            <h1>Simple Design</h1>
+           
+         
         </header>
         
         <div id="banner">
         
         <h2> this is the banner</h2>
+             <div class="card-container">
+        <div class ="card">
+    <div class="front"></div><img src="design2.jpeg" width="auto" height="300px"/</div>
+        <div class="back"><img src="simple2.jpeg" width="auto" height="300px"></div>
+        </div>
+        </div>
+            
+            
         </div>
         
         <div id="content">
         
-   <div class-"card"> 
-            card flipping
-            </div>
-            
-            
-            <p> please add contents here</p>
-        </div>
-        </div>
-    
+   
+    <div id="left">left</div>
         
+          
+        <div id="footer"> this is the footer</div>
+        </div>
+        </div>
+
     </body>
 
 
